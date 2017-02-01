@@ -45,6 +45,13 @@
         color: white;
         font-weight: bolder;
       }
+      @media only screen and (min-width: 520px)
+      {
+        .gap
+        {
+            display: none;
+        }
+      }
     </style>
   </head>
 
@@ -76,10 +83,18 @@
       <div class="jumbotron" id="jumbo1">
         <h1>Mexican Green Wave</h1>
         <p class="lead">Onion, Crisp Capsicum, Fresh Tomato & Jalapeno, sprinkled with exotic Mexican Herbs</p>
+        <br>
+        <button type = "button" class = "btn" style="background-color: #fc0; display: inline-block; padding: 1.2% 0.9%"><span style="color: black; font-weight: bolder; font-size: 140%;">Small: ₹ 180</span></button>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <button type = "button" class = "btn" style="background-color: #f90; display: inline-block; padding: 1.6% 1.2%;"><span style="color: black; font-weight: bolder; font-size: 140%;">Medium: ₹ 335</span></button>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <br class="gap"><br class="gap">
+        <button type = "button" class = "btn" style="background-color: #f03; display: inline-block; padding: 2.4% 1.8%;"><span style="color: black; font-weight: bolder; font-size: 140%;">Large: ₹ 500</span></button>
+        <br><br><br>
         <div style="display: inline-block; margin: 0 auto;">
-          <a href="#"><span style="font-size: 500%; color: #32cd32;" class="glyphicon glyphicon-plus-sign"></span></a>
+          <a style="display: inline-block;" href="#"><span style="background-color: #27a960; font-size: 500%; color: black; padding: 2%; border-radius: 50%;" class="glyphicon glyphicon-plus-sign"></span></a>
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <a href="#"><span style="font-size: 500%; color: red;" class="glyphicon glyphicon-minus-sign"></span></a>
+          <a style="display: inline-block;" href="#"><span style="background-color: #c0392b; font-size: 500%; color: black; padding: 2%; border-radius: 50%;" class="glyphicon glyphicon-minus-sign"></span></a>
         </div>
       </div>
     </div><!--/.container-collapse -->
