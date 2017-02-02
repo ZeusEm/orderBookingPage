@@ -73,12 +73,44 @@
         color: white;
         font-weight: bolder;
       }
-      @media only screen and (min-width: 520px)
+      .glowing-border1
       {
-        .gap
-        {
-            display: none;
-        }
+        color: black;
+        border: 2px solid grey;
+        border-radius: 7px;
+      }
+      .glowing-border1:hover, .glowing-border1:focus
+      {
+        color: #fc0;
+        outline: none;
+        border-color: #fc0;
+        box-shadow: 0 0 10px #9ecaed;
+      }
+      .glowing-border2
+      {
+        color: black;
+        border: 2px solid grey;
+        border-radius: 7px;
+      }
+      .glowing-border2:hover, .glowing-border2:focus
+      {
+        color: #f90;
+        outline: none;
+        border-color: #f90;
+        box-shadow: 0 0 10px #9ecaed;
+      }
+      .glowing-border3
+      {
+        color: black;
+        border: 2px solid grey;
+        border-radius: 7px;
+      }
+      .glowing-border3:hover, .glowing-border3:focus
+      {
+        color: #f03;
+        outline: none;
+        border-color: #f03;
+        box-shadow: 0 0 10px #9ecaed;
       }
     </style>
   </head>
@@ -112,18 +144,16 @@
         <h1>Mexican Green Wave</h1>
         <p class="lead">Onion, Crisp Capsicum, Fresh Tomato & Jalapeno, sprinkled with exotic Mexican Herbs</p>
         <br>
-        <button type = "button" class = "btn" style="background-color: #fc0; display: inline-block; padding: 1.2% 0.9%"><span style="color: black; font-weight: bolder; font-size: 140%;">Small: ₹ 180</span></button>
-        &nbsp;&nbsp;&nbsp;&nbsp;
-        <button type = "button" class = "btn" style="background-color: #f90; display: inline-block; padding: 1.6% 1.2%;"><span style="color: black; font-weight: bolder; font-size: 140%;">Medium: ₹ 335</span></button>
-        &nbsp;&nbsp;&nbsp;&nbsp;
-        <br class="gap"><br class="gap">
-        <button type = "button" class = "btn" style="background-color: #f03; display: inline-block; padding: 2.4% 1.8%;"><span style="color: black; font-weight: bolder; font-size: 140%;">Large: ₹ 500</span></button>
-        <br><br><br>
         <div style="display: inline-block; margin: 0 auto;">
           <a style="display: inline-block;" href="#"><span style="background-color: #27a960; font-size: 500%; color: black; padding: 2%; border-radius: 50%;" class="glyphicon glyphicon-plus-sign"></span></a>
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           <a style="display: inline-block;" href="#"><span style="background-color: #c0392b; font-size: 500%; color: black; padding: 2%; border-radius: 50%;" class="glyphicon glyphicon-minus-sign"></span></a>
         </div>
+      </div>
+      <div class="btn-group" style="min-width: 100%;">
+        <button type = "button" class = "btn glowing-border1 btn-primary" style="min-width: 33%; background-color: white;"><span style="font-size: 140%;">Small: ₹ 180</span></button>
+        <button type = "button" class = "btn glowing-border2 btn-primary" style="min-width: 33%; background-color: white;"><span style="font-size: 140%;">Medium: ₹ 335</span></button>
+        <button type = "button" class = "btn glowing-border3 btn-primary" style="min-width: 34%; background-color: white;"><span style="font-size: 140%;">Large: ₹ 500</span></button>
       </div>
       <br><br>
       <div class="jumbotron" id="jumbo2">
